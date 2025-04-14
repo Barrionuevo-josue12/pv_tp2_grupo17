@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio de Tres Números</title>
+    <script>
+        function calcularPromedio() {
+            // Solicitar al usuario que ingrese tres números enteros
+            const numero1 = parseInt(prompt("Ingrese el primer número entero:"));
+            const numero2 = parseInt(prompt("Ingrese el segundo número entero:"));
+            const numero3 = parseInt(prompt("Ingrese el tercer número entero:"));
+
+            // Validar que los valores ingresados sean números
+            if (isNaN(numero1) || isNaN(numero2) || isNaN(numero3)) {
+                alert("Por favor, ingrese solo números enteros.");
+                return;
+            }
+
+            // Calcular el promedio
+            const promedio = (numero1 + numero2 + numero3) / 3;
+
+            // Mostrar el resultado
+            alert(`El promedio de los tres números es: ${promedio}`);
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculadora de Promedio</h1>
+    <button onclick="calcularPromedio()">Calcular Promedio</button>
+</body>
+</html>

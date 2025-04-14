@@ -1,0 +1,19 @@
+{
+  "name": "pv_tp2_grupo17",
+  "version": "1.0.0",
+  "description": "Repositorio del grupo 17 de la materia Prog. Visual de A.P.U.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Barrionuevo-josue12/pv_tp2_grupo17.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Barrionuevo-josue12/pv_tp2_grupo17/issues"
+  },
+  "homepage": "https://github.com/Barrionuevo-josue12/pv_tp2_grupo17#readme"
+}
