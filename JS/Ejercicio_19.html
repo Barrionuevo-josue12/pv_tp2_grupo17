@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario Universitario</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+
+  <form id="formulario">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" placeholder="Ej: Aldo">
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" placeholder="Ej: Antivilo">
+
+    <label for="libreta">Libreta Universitaria:</label>
+    <input type="text" id="libreta" placeholder="Ej: APU009999">
+
+    <button type="button" onclick="mostrarDatos()">Mostrar Datos</button>
+  </form>
+
+  <script>
+    function mostrarDatos() {
+      const nombre = document.querySelector('#nombre').value;
+      const apellido = document.querySelector('#apellido').value;
+      const libreta = document.querySelector('#libreta').value;
+
+      alert(`Los datos ingresados son:\nNombre: ${nombre}\nApellido: ${apellido}\nLibreta Universitaria: ${libreta}`);
+    }
+  </script>
+
+</body>
+</html>
