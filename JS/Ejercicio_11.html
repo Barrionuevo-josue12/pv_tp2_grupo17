@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo de combustible</title>
+    <script>
+         calcularConsumo = () => {
+            // Solicitar al usuario que ingrese los kilometros y litros
+            const kilometros = parseFloat(prompt("Ingrese el numero de kilometros recorridos:"));
+            const litros = parseFloat(prompt("Ingrese el numero de litros consumidos:"));
+          
+
+            // Validar que los valores ingresados sean números
+            if (isNaN(kilometros) || isNaN(litros))
+                {
+                    alert("Por favor, ingrese solo números.");
+                    return;
+                }
+
+            // Calculos
+            const consumo = litros / kilometros;
+
+            // Mostrar el resultado
+            alert(`El consumo en ${kilometros} kilometros es de ${consumo} litro por km`);
+        }
+    </script>
+</head>
+<body>
+    <h1>Consumo de combustible</h1>
+    <button onclick="calcularConsumo()">Calcular consumo</button>
+</body>
+</html>
