@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contar Letra A</title>
+    <script>
+        const contarLetraA = (texto) => {
+            let contador = 0; 
+            texto = texto.toLowerCase();
+            
+            // Recorremos cada caracter del texto
+            for (let i = 0; i < texto.length; i++) {
+                if (texto[i] === 'a') {
+                    contador++;
+                }
+            }
+            
+            return contador;
+        };
+
+        const mostrarResultado = () => {
+            const texto = prompt("Ingrese un texto:");
+            const cantidadA = contarLetraA(texto);
+            document.getElementById("resultado").innerHTML = `La letra "a" aparece ${cantidadA} veces en el texto.`;
+        };
+    </script>
+</head>
+<body>
+    <h1>Contar letra "a"</h1>
+    <button onclick="mostrarResultado()">Contar</button>
+    <div id="resultado"></div>
+</body>
+</html>
