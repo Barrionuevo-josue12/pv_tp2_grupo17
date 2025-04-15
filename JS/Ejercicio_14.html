@@ -5,20 +5,28 @@
     <title>Mostrar Arreglo</title>
     <script>
         const numeros = [10, 20, 30, 40, 50];
+        const numerosMultiplicados=[];
 
-        mostrarArreglo = (arreglo) => {
+        mostrarArreglo = (arreglo,nuevoArreglo) => {
             const contenedor = document.getElementById("resultado");
             const contenedor2 = document.getElementById("resultado2");
 
-            for (let i = 0; i < arreglo.length; i++) {
+            for (let i = 0; i < arreglo.length; i++) 
+            {
                 contenedor.innerHTML += `<p>${arreglo[i]}</p>`;
-                contenedor2.innerHTML += `<p>${arreglo[i] * 2}</p>`;
+                let nuevo=arreglo[i]*2
+                nuevoArreglo.push(nuevo)
+            }
+
+            for(let i=0; i< nuevoArreglo.length;i++)
+            {
+                contenedor2.innerHTML += `<p>${nuevoArreglo[i]}</p>`;
             }
         }
 
         // Esperamos que la página cargue para mostrar los números
         window.onload = () =>{
-            mostrarArreglo(numeros);
+            mostrarArreglo(numeros,numerosMultiplicados);
         };
     </script>
 </head>
