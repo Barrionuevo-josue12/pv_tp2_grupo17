@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mostrar Arreglo Automáticamente</title>
+    <script>
+        const numeros = [10, 20, 30, 40, 50];
+
+        mostrarArreglo = (arreglo) => {
+            const contenedor = document.getElementById("resultado");
+            for (let i = 0; i < arreglo.length; i++) {
+                contenedor.innerHTML += `<p>${arreglo[i]}</p>`;
+            }
+        }
+
+        // Esperamos que la página cargue para mostrar los números
+        window.onload = () =>{
+            mostrarArreglo(numeros);
+        };
+    </script>
+</head>
+<body>
+    <h1>Números del Arreglo</h1>
+    <div id="resultado"></div>
+</body>
+</html>
