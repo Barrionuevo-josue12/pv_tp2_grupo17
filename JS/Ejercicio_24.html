@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <button id="cambiarcolor">🎨 Cambiar Color</button>
+    <script>
+        // Capturar el botón por su ID
+        const boton = document.getElementById('cambiarcolor');
+        // Capturar el evento click
+        boton.addEventListener('click', function cambiarColorAleatorio() {
+            // Generar un color aleatorio en formato hexadecimal
+            const colorAleatorio = '#' + Math.floor(Math.random() * 16777215).toString(16);
+            // Cambiar el color de fondo
+            document.body.style.backgroundColor = colorAleatorio;
+            // Mostrar un mensaje en la consola con el color generado F12 en el navegador
+            console.log(`El color de fondo ha cambiado a: ${colorAleatorio}`);
+        });
+    </script>
+</body>
+</html>
