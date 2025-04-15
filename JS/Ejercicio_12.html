@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparar si es par</title>
+    <script>
+         calcularPar = () => {
+            // Solicitar al usuario que ingrese el numero
+            const numero = parseInt(prompt("Ingrese un numero:"));
+
+            // Validar que los valores ingresados sean números
+            if (isNaN(numero))
+                {
+                    alert("Por favor, ingrese solo números.");
+                    return;
+                }
+
+            // Calculos
+            let resultado=numero % 2
+            console.log(resultado)
+            if (resultado == 0)
+                alert(`El numero: ${numero} es par`);
+            else
+                alert(`El numero: ${numero} es impar`);
+    
+        }
+    </script>
+</head>
+<body>
+    <h1>Sabes si su numero es par? clickea y averigualo!</h1>
+    <button onclick="calcularPar()">Calcular</button>
+</body>
+</html>
