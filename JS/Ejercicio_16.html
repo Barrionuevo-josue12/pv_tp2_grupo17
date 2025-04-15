@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sumar rango</title>
+    <script>
+        const sumar_rango = () => {
+            const numero_inicial = parseInt(prompt("Ingrese el numero inicial"));
+            const numero_final = parseInt(prompt("Ingrese el numero final"));
+            if (numero_inicial<=numero_final)
+                {
+                    let suma=0
+                    for (i=numero_inicial;i <= numero_final ; i++)
+                        {
+                            suma=suma+i   
+                        }
+                    document.getElementById("resultado").innerHTML = `La suma de los numeros es ${suma}`
+                }
+            else
+                alert("El numero inicial debe ser menor o igual que el numero final")
+
+            
+        };
+    </script>
+</head>
+<body>
+    <h1>Sumar rango</h1>
+    <button onclick="sumar_rango()">Ingresar número</button>
+    <div id="resultado"></div>
+</body>
+</html>
