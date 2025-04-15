@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Retornar Mes</title>
+    <script>
+        const retornarMes = () => {
+            const numero = parseInt(prompt("Ingrese un número del 1 al 12:"));
+
+            if (isNaN(numero)) {
+                document.getElementById("resultado").innerHTML = "Eso no es un número.";
+                return;
+            }
+
+            let nombreMes="";
+
+            switch (numero) {
+                case 1: nombreMes = "enero"; break;
+                case 2: nombreMes = "febrero"; break;
+                case 3: nombreMes = "marzo"; break;
+                case 4: nombreMes = "abril"; break;
+                case 5: nombreMes = "mayo"; break;
+                case 6: nombreMes = "junio"; break;
+                case 7: nombreMes = "julio"; break;
+                case 8: nombreMes = "agosto"; break;
+                case 9: nombreMes = "septiembre"; break;
+                case 10: nombreMes = "octubre"; break;
+                case 11: nombreMes = "noviembre"; break;
+                case 12: nombreMes = "diciembre"; break;
+                default:
+                    document.getElementById("resultado").innerHTML = "No es un mes válido.";
+                    return;
+            }
+
+            document.getElementById("resultado").innerHTML = `El mes número ${numero} es: ${nombreMes}`;
+        };
+    </script>
+</head>
+<body>
+    <h1>¿Qué mes corresponde al número?</h1>
+    <button onclick="retornarMes()">Ingresar número de mes</button>
+    <div id="resultado"></div>
+</body>
+</html>
