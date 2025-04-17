@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países y Capitales</title>
+    <style>
+        html, body {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            margin: 0;
+            text-align: center;
+            background-color: rgb(83, 83, 80);
+        }
+        select {
+            padding: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 25px;
+            color: #043081;
+            border: 2px solid #929293;
+            margin: 10px;
+            padding: 10px;
+            outline: none;
+            width: 350px;
+        }
+
+        h1 {
+            border: 5px solid #929293;
+            border-radius: 50px;
+            padding: 30px;
+            font-size: 50px;
+            color: #043081;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selecciona un país</h1>
+    <!-- Lista de países -->
+    <select id="listaPaises">
+        <option value="">Selecciona un país</option>
+        <option value="argentina">Argentina</option>
+        <option value="brasil">Brasil</option>
+        <option value="peru">Perú</option>
+        <option value="chile">Chile</option>
+        <option value="uruguay">Uruguay</option>
+        <option value="eua">Estados Unidos</option>
+        <option value="mexico">Mexico</option>
+        <option value="colombia">Colombia</option>
+        <option value="ecuador">Ecuador</option>
+        <option value="bolivia">Bolivia</option>
+        <option value="venezuela">Venezuela</option>      
+    </select>
+
+    <!-- Lista de capitales -->
+    <select id="listaCapitales">
+        <option value="">Capital</option>
+    </select>
+
+    <script>
+        // Países con sus capitales 
+        const paisesYCapitales = {
+            argentina: "Buenos Aires",
+            brasil: "Brasilia",
+            peru: "Lima",
+            chile: "Santiago",
+            uruguay: "Montevideo",
+            eua: "Washington D.C.",
+            mexico: "Ciudad de México",
+            colombia: "Bogotá",
+            ecuador: "Quito",
+            bolivia: "Sucre",
+            venezuela: "Caracas"
+        };
+
+        const listaPaises = document.getElementById("listaPaises");
+        const listaCapitales = document.getElementById("listaCapitales");
+
+        // Evento change
+        listaPaises.addEventListener("change", () => {
+            const paisSeleccionado = listaPaises.value;
+
+            listaCapitales.innerHTML = '<option value="">Capital</option>';
+
+            // Agregar la capital correspondiente a la lista de capitales
+            if (paisesYCapitales[paisSeleccionado]) {
+                const capital = paisesYCapitales[paisSeleccionado];
+                const opcion = document.createElement("option");
+                opcion.value = capital.toLowerCase();
+                opcion.textContent = capital;
+                opcion.selected = true; // Seleccionar automáticamente la capital
+                listaCapitales.appendChild(opcion);
+
+                console.log(`País seleccionado: ${paisSeleccionado}`);
+                console.log(`Capital seleccionada: ${capital}`);
+            }
+        });
+    </script>
+</body>
+</html>
