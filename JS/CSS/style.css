@@ -63,3 +63,49 @@ button:hover {
     border: 1px solid #ccc;
     border-radius: 5px;
   }
+  
+ /* Ejercicio 23 */
+
+ .container {
+  max-width: 500px;
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #111;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.radio-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  color: #555;
+  cursor: pointer;
+  padding: 8px 10px;
+}
+
+.radio-option input[type="radio"] {
+  transform: scale(1.5);
+  accent-color: #0066cc;
+}
+
+#result {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #0066cc;
+  text-align: center;
+}

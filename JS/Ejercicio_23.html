@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Videojuego Favorito</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>¿Cuál es tu videojuego favorito?</h1>
+
+    <div class="radio-group">
+      <label class="radio-option">
+        <span>Marvel Super Heroes</span>
+        <input type="radio" name="juego" value="Marvel Super Heroes">
+      </label>
+
+      <label class="radio-option">
+        <span>Pokemon TCG Pocket</span>
+        <input type="radio" name="juego" value="Pokemon TCG Pocket">
+      </label> 
+
+      <label class="radio-option">
+        <span>Saint Seiya Awakening</span>
+        <input type="radio" name="juego" value="Saint Seiya Awakening">
+      </label>
+    </div>
+
+    <div id="result">Selecciona una opción para ver el resultado.</div>
+  </div>
+
+  <script>
+    const radios = document.querySelectorAll('input[name="juego"]');
+    const resultDiv = document.getElementById("result");
+
+    radios.forEach(radio => {
+      radio.addEventListener("change", () => {
+        resultDiv.textContent = `Video Juego seleccionado: ${radio.value}`;
+        console.log(`Video Juego seleccionado: ${radio.value}`);
+      });
+    });
+  </script>
+</body>
+</html>
+
