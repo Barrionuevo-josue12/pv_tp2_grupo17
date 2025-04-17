@@ -1,5 +1,5 @@
 /* Ejercicio 24 */
-body {
+.bodyEjercicio24 {
     display: flex; 
     justify-content: center; 
     align-items: center; 
@@ -109,3 +109,31 @@ h1 {
   color: #0066cc;
   text-align: center;
 }
+/* CSS EJERCICIO 21*/
+.bodyEjercicio21 {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+.bodyEjercicio21,h1 {
+      color: #333;
+    }
+
+.contenedorEjercicio21 {
+      margin-top: 20px;
+    }
+
+input[type="text"] {
+      padding: 10px;
+      width: 300px;
+      font-size: 16px;
+    }
+.resultadoEjercicio21 {
+      margin-top: 15px;
+      padding: 10px;
+      background-color: #d9edf7;
+      border: 1px solid #31708f;
+      color: #31708f;
+      font-weight: bold;
+    }
