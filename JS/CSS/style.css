@@ -64,51 +64,6 @@ button:hover {
     border-radius: 5px;
   }
   
- /* Ejercicio 23 */
-
- .container {
-  max-width: 500px;
-  margin: 50px auto;
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-  text-align: center;
-  color: #111;
-}
-
-.radio-group {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-.radio-option {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 18px;
-  color: #555;
-  cursor: pointer;
-  padding: 8px 10px;
-}
-
-.radio-option input[type="radio"] {
-  transform: scale(1.5);
-  accent-color: #0066cc;
-}
-
-#result {
-  margin-top: 30px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #0066cc;
-  text-align: center;
-}
 /* CSS EJERCICIO 21*/
 .bodyEjercicio21 {
       font-family: Arial, sans-serif;
@@ -137,3 +92,75 @@ input[type="text"] {
       color: #31708f;
       font-weight: bold;
     }
+
+/* Ejercicio 22 */
+
+#entrada {
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+}
+
+#resultado {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  min-height: 30px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+/* Ejercicio 22 */
+
+  #entrada {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+  }
+  
+  #resultado {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    min-height: 30px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+
+  /* Ejercicio 23 y 24 */
+  
+  .body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .contenedor {
+    text-align: center;
+    background-color: #fefefe;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  #seleccionado {
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    display: inline-block;
+  }
+  
+  
