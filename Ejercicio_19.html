@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Formulario Universitario</title>
-  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="JS/CSS/style.css">
 </head>
 <body>
 
@@ -17,18 +17,9 @@
     <label for="libreta">Libreta Universitaria:</label>
     <input type="text" id="libreta" placeholder="Ej: APU009999">
 
-    <button type="button" onclick="mostrarDatos()">Mostrar Datos</button>
+    <button type="button"  id="botonEjer19">Mostrar Datos</button>
   </form>
 
-  <script>
-    function mostrarDatos() {
-      const nombre = document.querySelector('#nombre').value;
-      const apellido = document.querySelector('#apellido').value;
-      const libreta = document.querySelector('#libreta').value;
-
-      alert(`Los datos ingresados son:\nNombre: ${nombre}\nApellido: ${apellido}\nLibreta Universitaria: ${libreta}`);
-    }
-  </script>
-
+  <script type="module" src="/JS/Ejercicio_19.js"></script>
 </body>
 </html>
